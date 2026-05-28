@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شيشتاوي | الهرم الرابع</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: radial-gradient(circle at center, #1a1f29 0%, #0d1117 100%);
+            color: #f0f6fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .profile-card {
+            background: rgba(22, 27, 34, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(48, 54, 61, 0.8);
+            border-radius: 24px;
+            width: 100%;
+            max-width: 420px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        .profile-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(88, 166, 255, 0.15);
+            border-color: #58a6ff;
+        }
+        .img-container {
+            position: relative;
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 25px;
+        }
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #30363d;
+            transition: border-color 0.4s ease;
+        }
+        .profile-card:hover .profile-img {
+            border-color: #58a6ff;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+        .nickname {
+            color: #58a6ff;
+            font-size: 16px;
+            font-weight: 600;
+            background: rgba(88, 166, 255, 0.1);
+            padding: 6px 16px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+        .bio {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #8b949e;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .info-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #21262d;
+            border: 1px solid #30363d;
+            padding: 14px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #c9d1d9;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .info-link:hover {
+            background: #30363d;
+            color: #ffffff;
+            transform: scale(1.02);
+        }
+        .icon-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+        }
+        .value-text {
+            color: #8b949e;
+            font-size: 14px;
+        }
+        .info-link:hover .value-text {
+            color: #58a6ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-card">
+    <div class="img-container">
+        <img src="profile.jpg" alt="اميل بطرس" class="profile-img">
+    </div>
+    
+    <h1>اميل بطرس</h1>
+    <div class="nickname">الهرم الرابع | شيشتاوي 😎</div>
+    
+    <div class="bio">
+        مطور ويب ومبتكر تكنولوجي.. عاشق للتميز والتحدي ومقفل اللعبة في مجالي. 🔥
+    </div>
+    
+    <div class="links-container">
+        <div class="info-link">
+            <div class="icon-label">📍 <span>الموقع</span></div>
+            <div class="value-text">بني محمد سلطان، المنيا</div>
+        </div>
+        
+        <a href="mailto:emailbotros010@gmail.com" class="info-link">
+            <div class="icon-label">✉️ <span>الإيميل</span></div>
+            <div class="value-text">اضغط للتواصل المباشر</div>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
